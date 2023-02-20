@@ -4,6 +4,7 @@
 	--black: #333;
 	--white: #fff;
 	--light-color: #cdaa7c;
+	--light-gray: #e6e7e7;
 	--box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
@@ -25,6 +26,8 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* header part starts */
+
 header {
 	position: fixed;
 	top: 0;
@@ -36,6 +39,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: var(--box-shadow);
+	z-index: 100;
 }
 
 header .logo img {
@@ -76,6 +80,108 @@ header .icons i:hover {
 header .icons #menu {
 	display: none;
 }
+
+/* header part ends */
+
+/* slider section starts */
+
+.home .home-slider .slide{
+	display: flex;
+	align-items:center;
+	justify-content: flex-start;
+	height: 100vh;
+}
+
+.home .home-slider .slide_1 {
+	background: url("img/slideshow-9.jpg");
+}
+
+.home .home-slider .slide_2 {
+	background: url("img/slideshow-11.jpg");
+}
+
+.home .home-slider .slide_3 {
+	background: url("img/slideshow-8.jpg");
+}
+
+.home .home-slider .slide_1,
+.home .home-slider .slide_2,
+.home .home-slider .slide_3 {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.home .home-slider .slide .content {
+	text-align: center;
+	padding-left: 9rem;
+}
+
+.home .home-slider .slide .content h3{
+	color: var(--light-color);
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.home .home-slider .slide .content h1 {
+	color: var(--white);
+	font-size: 8rem;
+}
+
+.home .home-slider .slide .content p {
+	color: var(--light-gray);
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	padding: .5rem 0;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1.7rem;
+	color: var(--white);
+	border: .1rem solid rgba(205, 170, 124, 0.2);
+	cursor: pointer;
+	padding: .8rem 3rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.btn:before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: var(--light-color);
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -100%;
+	transition: left 0.3s ease 0s;
+}
+
+.btn:hover {
+	color: var(--black);
+}
+
+.btn:hover.btn:before {
+	left: 0;
+}
+
+.swiper-pagination-bullet {
+	background: var(--light-color);
+	width: 15px;
+	height: 15px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 10px;
+}
+
+/* slider section ends */
+
 
 /* media query  */
 
@@ -131,5 +237,8 @@ header .icons #menu {
 		font-size: 2rem;
 		background: var(--black)
 	}
+
+	/*slider media query*/ 
+	
 	
 }

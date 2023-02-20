@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<!-- Link Swiper`s CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,56 +25,60 @@
 			<a href="#blog">Blog</a>
 		</nav>
 		<div class="icons">
-			<i class="fas fa-bars" id ="menu"></i>
+			<i class="fas fa-bars" id="menu"></i>
 			<i class="fas fa-search"></i>
 			<i class="fas fa-heart"></i>
 			<i class="fas fa-shopping-cart"></i>
 		</div>
 	</header>
 	<!-- header section end -->
-		
+
 	<!-- slider section start -->
-	<div class="home" id="#home"></div>
-	<div class="home-slider">
-		<div class="wrapper">
-			<div class="slide slide_1">
-				<div class="content">
-					<img src="img/crown-symbol.png" alt="slide">
-					<h3>The magic of taste</h3>
-					<h1>Gift voucher</h1>
-					<p>
-						Give away your beloved customers
-					</p>
-					<a href="#" class="btn">Order now</a>
+	<div class="home" id="#home">
+		<div class="home-slider">
+			<div class="swiper-wrapper wrapper">
+				<div class="swiper-slide slide slide_1">
+					<div class="content">
+						<img src="img/crown-symbol.png" alt="slide">
+						<h3>The magic of taste</h3>
+						<h1>Gift voucher</h1>
+						<p>
+							Give away your beloved customers
+						</p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+				</div>
+				<div class="swiper-slide slide slide_2">
+					<div class="content">
+						<img src="img/crown-symbol.png" alt="slide">
+						<h3>Sale of 10% this dish</h3>
+						<h1>The fresh</h1>
+						<p>
+							Food restaurant
+						</p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+				</div>
+				<div class="swiper-slide slide slide_3">
+					<div class="content">
+						<img src="img/crown-symbol.png" alt="slide">
+						<h3>We are opened</h3>
+						<h1>Fresh fruits</h1>
+						<p>
+							You will love it
+						</p>
+						<a href="#" class="btn">Order now</a>
+					</div>
 				</div>
 			</div>
-			<div class="slide slide_2">
-				<div class="content">
-					<img src="img/crown-symbol.png" alt="slide">
-					<h3>Sale of 10% this dish</h3>
-					<h1>The fresh</h1>
-					<p>
-						Food restaurant
-					</p>
-					<a href="#" class="btn">Order now</a>
-				</div>
-			</div>
-			<div class="slide slide_3">
-				<div class="content">
-					<img src="img/crown-symbol.png" alt="slide">
-					<h3>We are opened</h3>
-					<h1>Fresh fruits</h1>
-					<p>
-						You will love it
-					</p>
-					<a href="#" class="btn">Order now</a>
-				</div>
-			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 	</div>
-	<!-- slider section end -->
 
-	<script src="script.js"></script>
+	<!-- slider section end -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
