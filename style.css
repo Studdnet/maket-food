@@ -177,10 +177,94 @@ header .icons #menu {
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-	margin: 0 10px;
+	margin: 0 10px 15px;
 }
 
 /* slider section ends */
+
+/* welcome section ends */
+
+.section {
+	padding: 8rem 9%;
+}
+
+.heading {
+	text-align: center;
+	color: var(--black);
+	font-size: 4.5rem;
+	padding-bottom: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+
+.sub-heading {
+	display: flex;
+	justify-content: center;
+}
+
+.sub-heading h3 {
+	text-align: center;
+	color: var(--light-color);
+	font-size: 2.5rem;
+	padding: .5rem 2rem;
+	font-weight: 300;
+	margin-bottom: 4rem;
+	background: var(--black);
+}
+
+.welcome .box-container {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.welcome .box-container .box {
+	width: 33%;
+	background: var(--black);
+	box-shadow: var(--box-shadow);
+	text-align: center;
+}
+
+.welcome .box-container .box .image {
+	height: 25rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.welcome .box-container .box .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.welcome .box-container .box .image:hover img {
+	transform: scale(1.1);
+}
+
+.welcome .box-container .box .content {
+	padding: 2rem;
+	padding-top: 2rem;
+}
+
+.welcome .box-container .box .content h3 {
+	color: var(--light-color);
+	font-size: 2.2rem;
+	font-weight: 400;
+}
+
+.welcome .box-container .box .content p {
+	color: var(--white);
+	margin-top: 0.7rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+.welcome .box-container .box .content .btn {
+	margin-top: 3rem;
+}
+
+/* welcome section ends */
 
 
 /* media query  */
