@@ -334,7 +334,6 @@ header .icons #menu {
 /* our-menu section ends */
 
 /* our-team section starts */
-
 .our-team {
 	background: var(--white);
 }
@@ -423,9 +422,13 @@ header .icons #menu {
 .our-chef .item:hover .chef-info{
 	top: 0;
 }
-
 /* our-team section ends */
 
+/* reservation section starts */
+.reservation {
+	background: var(--white);
+}
+/* reservation section ends */
 
 /* ================================================================================== */
 
