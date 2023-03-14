@@ -578,6 +578,20 @@ header .icons #menu {
 }
 /* The footer ends */
 
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #333; 
+}
+
+::-webkit-scrollbar-thumb {
+	background:#cdaa7c;
+}
+
 
 /* ================================================================================== */
 
