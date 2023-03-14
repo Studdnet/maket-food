@@ -478,8 +478,16 @@ header .icons #menu {
 	color: #b7b3b3;
 }
 
-
 /* reservation section ends */
+
+
+/* The section news starts */
+
+.blog.section {
+	background: var(--white);
+}
+
+/* The section news ends */
 
 /* ================================================================================== */
 
