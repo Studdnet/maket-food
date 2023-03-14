@@ -487,6 +487,37 @@ header .icons #menu {
 	background: var(--white);
 }
 
+.blog .box-container .box{
+	background: var(--white);
+}
+
+.blog .content {
+	text-align: left;
+	position: relative;
+}
+
+.blog .content h3, 
+.blog .content p,
+.blog .content a {
+	color: #333!important;
+}
+
+.blog .content a {
+	display: inline-block;
+	font-size: 14px;
+	padding-top: 1rem;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.blog .content img {
+	width: 11%;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+
 /* The section news ends */
 
 /* ================================================================================== */
