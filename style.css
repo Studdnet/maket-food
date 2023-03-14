@@ -592,6 +592,19 @@ header .icons #menu {
 	background:#cdaa7c;
 }
 
+/* jump to head */
+
+.topbtn {
+	position: fixed;
+	right: 2%;
+	bottom: 10%;
+	width: 30px;
+	height: 30px;
+	background: #cdaa7c;
+	color: var(--white);
+	cursor: pointer;
+}
+
 
 /* ================================================================================== */
 
